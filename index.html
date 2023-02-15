@@ -1,0 +1,56 @@
+<html>
+<head>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body style="text-align: center">  
+    <form id="user-form" method="post">
+    <div style="
+    border-radius: 50px;
+    border: 10px solid transparent;
+    margin-left: 450px;
+    margin-right: 450px;
+    background: linear-gradient(45deg,rgb(43, 208, 240),rgb(28, 65, 174)) border-box">
+    <h1 style="text-decoration: underline; color: beige;"/>CANDIDATE DETAIL</h1>
+    <br><br>
+    <p style="margin-left: 40px">
+    <li >
+    <label for="text">NAME: </label>
+    <input required type="text" id="name" name="name">
+    </li></p><br>
+    <p style="margin-left: 40px">
+    <li>
+    <label for="email">EMAIL: </label>
+    <input required type="email" id="email" name="email" >
+    </li></p><br>
+    <p style="margin-left: 40px">
+    <li>
+    <label required for="password">PASSWORD: </label>
+    <input required type="password" id="password" name="password" ></li>
+    </p><br>
+    <p style="margin-left: 40px">
+    <li>
+    <label for="dob">DATE OF BIRTH: </label>
+    <input type="date" id="dob" name="dob"></li>
+    </p><br>
+    <p style="margin-left: 40px">
+    <input type="checkbox" name="acceptTerms" id="acceptTerms" >
+    <label for="acceptTerms">ACCEPT TERMS & CONDITIONS</label>
+    </p>
+    <button required class="button" type="submit" style="--x: 50%;
+    --y: 50%;position: relative;appearance: none;padding: 1em 2em;
+    color: white;cursor: pointer;outline: none;border-radius: 100px;
+    border: 2px solid transparent;
+    background: linear-gradient(#17f665, #bef518) padding-box, radial-gradient(farthest-corner at var(--x) var(--y), #00C9A7, #845EC2) border-box;
+  ">SUBMIT</button>
+    <p></p>
+    </div>
+  </form>
+  <div class="relative bg-white px-4 mt-5 pt-10 pb-8 shadow-xl ring-1 ring-gray-900/5 sm:mx-auto sm:rounded-lg sm:px-10 ">
+    <div class="mx-auto">
+        <h2 class="text-xl text-center font-bold leadin-right">Entries</h2>
+        <div class="divide-y divide-gray-300/50" id="user-entries"></div>
+    </div>
+</div>
+  <script src="index.js"></script>
+</body>
+</html>
